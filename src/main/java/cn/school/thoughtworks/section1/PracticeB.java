@@ -8,13 +8,10 @@ public class PracticeB {
     List<String> collectSameElements(List<String> collection1, List<List<String>> collection2) {
         List<String> converted = new ArrayList<>();
         for(List<String> item: collection2){
-            for(String string:item){
-                converted.add(string);
-            }
+            converted.addAll(item);
         }
 
-        return collection1.stream()
-                .filter(item -> converted.contains(item))
-                .collect(Collectors.toList());
+        PracticeA practiceA = new PracticeA();
+        return practiceA.collectSameElements(collection1, converted);
     }
 }

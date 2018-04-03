@@ -8,7 +8,8 @@ import java.util.stream.Collectors;
 public class PracticeC {
     List<String> collectSameElements(List<String> collection1, Map<String,List<String>> collection2) {
         List<String> converted = new ArrayList<>();
-        collection2.entrySet().stream().forEach(i -> converted.addAll(i.getValue()));
-        return collection1.stream().filter(item -> converted.contains(item)).collect(Collectors.toList());
+        collection2.entrySet().forEach(i -> converted.addAll(i.getValue()));
+        PracticeA practiceA = new PracticeA();
+        return practiceA.collectSameElements(collection1, converted);
     }
 }
