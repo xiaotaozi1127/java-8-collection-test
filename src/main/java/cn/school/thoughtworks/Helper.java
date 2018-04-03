@@ -6,6 +6,12 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Helper {
+    public List<String> CollectSameElements(List<String> collection1, List<String> collection2){
+        return collection1.stream()
+                .filter(item -> collection2.contains(item))
+                .collect(Collectors.toList());
+    }
+
     public Map<String,Integer> GetElementSize(List<String> collectionA){
         Map<String,Integer> collection3 = new HashMap<String,Integer>(){};
         collectionA.stream().distinct().forEach(i ->
