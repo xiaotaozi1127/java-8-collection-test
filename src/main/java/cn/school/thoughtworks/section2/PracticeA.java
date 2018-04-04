@@ -2,10 +2,8 @@ package cn.school.thoughtworks.section2;
 
 import cn.school.thoughtworks.Helper;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class PracticeA {
     Map<String,Integer> countSameElements(List<String> collection1) {

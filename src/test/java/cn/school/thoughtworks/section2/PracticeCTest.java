@@ -20,7 +20,6 @@ public class PracticeCTest {
 
     @Test
     public void count_same_elements_should_return_an_map_with_elements_and_count() {
-        //把1集合中相同的元素统计出数量
         List<String> collection1 = Arrays.asList(
                 "a", "a", "a",
                 "e", "e", "e", "e", "e", "e", "e",
