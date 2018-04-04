@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class PracticeB {
     Map<String, Integer> countSameElements(List<String> collection1) {
-        //实现练习要求，并改写该行代码。
         Helper helper = new Helper();
         return helper.GetElementSizeWithDash(collection1);
     }

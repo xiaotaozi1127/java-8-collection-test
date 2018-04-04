@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class PracticeD {
     Map<String,Integer> createUpdatedCollection(List<String> collectionA, Map<String,List<String>> collectionB) {
-        //实现练习要求，并改写该行代码。
         Helper helper = new Helper();
         Map<String,Integer> collection3 = helper.GetElementSizeWithDash(collectionA);
         List<String> keys = new ArrayList<>();

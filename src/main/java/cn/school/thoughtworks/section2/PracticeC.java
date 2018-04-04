@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 
 public class PracticeC {
     Map<String, Integer> countSameElements(List<String> collection1) {
-        //实现练习要求，并改写该行代码。
         Map<String,Integer> result = new HashMap<String,Integer>(){};
         collection1.stream().distinct().forEach(i -> {
             Map<String,Integer> itemCount = GetItemCount(i, collection1);
